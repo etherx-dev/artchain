@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>artchain</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+  <link href="css/font.css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    </head>
+    <body>
+
+      <div class="container-fluid" style="margin:0 0 14px 0;">
+        <header>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12" style="color:#000;"><h3 style="font-weight: bold;">artchain</h3></div>
+            </div>
+          </div>
+        </header>
+      </div>
+      <div class="container">
+        <div class="row" style="margin:0 0 14px 0;">
+          <div class="row">
+            <div class="col-md-3 col-sm-3 col-xs-3">
+              <img src="img/users/l.png" alt="muk" class="img-circle img-responsive">
+            </div>  
+            <div class="col-md-6 col-sm-6"></div>
+            <div class="col-md-1 col-sm-1 col-xs-3" style="padding:0;"><h4 style="margin:0;">565<br><small>Posts</small></h4></div>
+            <div class="col-md-1 col-sm-1 col-xs-3" style="padding:0;"><h4 style="margin:0;">123<br><small>Followers</small></h4></div>
+            <div class="col-md-1 col-sm-1 col-xs-3" style="padding:0;"><h4 style="margin:0;">694<br><small>Following</small></h4></div>
+            <div class="row" style="margin:0;">
+              <div class="col-md-6 col-lg-6 col-sm-6 col-xs-3" style="padding:0;"></div>
+              <div class="col-md-3 col-lg-3 col-sm-3 col-xs-6" style="padding:0;margin-top:4px;">
+                <div class="col-md-9 col-lg-9 col-xs-9 col-sm-9" style="padding:0;">
+                  <a class="btn btn-default" href="#" role="button" id="follow_btn" data-container="body" data-html="true" data-toggle="popover" data-placement="bottom" data-content="Example <br> example example example" style="width:100%;height:26px;line-height: 13px;">Follow</a>  
+                </div>
+                <div class="col-md-3 col-lg-3 col-xs-3 col-sm-3" style="padding: 0;height:">
+                  <a class="btn btn-default glyphicon glyphicon-chevron-down" aria-hidden="true" href="#" id="arrow" role="button" style="width:80%;height:26px;line-height: 26px;text-align: center;padding:0;"></a>  
+                </div>
+              </div>
+            </div> 
+          </div> 
+        </div>
+        <div class="row" style="margin:0 0 14px 0;">
+          <div class="col-md-10 col-xs-10 col-lg-10 col-sm-10"><h4 style="margin:0;font-weight: bold;">Laurenzo</h4></div>
+          <div class="col-md-10 col-xs-8 col-lg-10 col-sm-10">
+            <p id="about" style="overflow: hidden;white-space: nowrap;text-overflow: ellipsis;">About aboutt about about about about about about about about about about aboutt about about about about about about about about about about aboutt about about about about about about about about about about aboutt about about about about about about about about about about aboutt about about about about about about about about about about aboutt about about about about about about about about about about aboutt about about about about about about about about about about
+            </p>
+          </div>
+          <div class="col-md-2 col-xs-4 col-lg-2 col-sm-2">
+            <a class="btn btn-default glyphicon glyphicon-equalizer" aria-hidden="true" href="#" role="button" style="width:100%;height:28px;line-height:28px;padding:0;" title="Appraise"></a>    
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid" id="middle-nav" style="background-color:#fff;border-top:1px solid #CCC;border-bottom:1px solid #CCC;">
+        <div class="container" style="height:30px;font-size:16px;">
+          <nav class="navbar navbar-default" style="background-color:transparent;border: none;">
+            <div class="container-fluid">
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="text-align: center;padding:0;">
+                <li class="glyphicon glyphicon-book" id="prov_btn" style="display: block;line-height: 30px;"></li>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="text-align: center;padding:0;">
+                <a href="#" class="" title="DR#" style="display: block;line-height: 30px;">DR#</a>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="text-align: center;padding:0;">
+                <li class="glyphicon glyphicon-earphone" style="display: block;line-height: 30px;"></li>
+              </div>
+            </nav>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row" id="like_this" style="width:100%;height:100px;background-color:#123;color:#fff;margin:0;text-align:center;display:none;">
+          Supprriiiisssseee!!!
+        </div>
+        <div class="row" id="prov" style="width:100%;height:100px;background-color:#666;color:#fff;margin:0;text-align:center;display:none;">
+          PROV!!!
+        </div>
+      </div>
+      <!-- Content -->
+      <div class="container-fluid" style="">
+        <div class="container" style="padding:0;margin-bottom: 90px;">
+          <div class="col-md-4 col-sm-4 col-lg-4 col-xs-4" style="padding:1px 1px 1px 1px;">
+            <a href="detail.html">
+              <img src="img/arts/1.png" class="img-responsive" alt="Responsive image">
+            </a>
+          </div>
+          <div class="col-md-4 col-sm-4 col-lg-4 col-xs-4" style="padding:1px 1px 1px 1px;">
+            <a href="detail.html">
+              <img src="img/arts/2.png" class="img-responsive" alt="Responsive image">
+            </a>
+          </div>
+          <div class="col-md-4 col-sm-4 col-lg-4 col-xs-4" style="padding:1px 1px 1px 1px;">
+            <a href="detail.html">
+              <img src="img/arts/3.png" class="img-responsive" alt="Responsive image">
+            </a>
+          </div>
+          <div class="col-md-4 col-sm-4 col-lg-4 col-xs-4" style="padding:1px 1px 1px 1px;">
+            <a href="detail.html">
+              <img src="img/arts/2.png" class="img-responsive" alt="Responsive image">
+            </a>
+          </div>
+          <div class="col-md-4 col-sm-4 col-lg-4 col-xs-4" style="padding:1px 1px 1px 1px;">
+            <a href="detail.html">
+              <img src="img/arts/3.png" class="img-responsive" alt="Responsive image">
+            </a>
+          </div>
+          <div class="col-md-4 col-sm-4 col-lg-4 col-xs-4" style="padding:1px 1px 1px 1px;">
+            <a href="detail.html">
+              <img src="img/arts/1.png" class="img-responsive" alt="Responsive image">
+            </a>
+          </div>
+          <div class="col-md-4 col-sm-4 col-lg-4 col-xs-4">
+            <a href="detail.html">
+              <img src="img/arts/1.png" class="img-responsive" alt="Responsive image">
+            </a>
+          </div>
+          <div class="col-md-4 col-sm-4 col-lg-4 col-xs-4">
+            <a href="detail.html">
+              <img src="img/arts/2.png" class="img-responsive" alt="Responsive image">
+            </a>
+          </div>
+          <div class="col-md-4 col-sm-4 col-lg-4 col-xs-4">
+            <a href="detail.html">
+              <img src="img/arts/3.png" class="img-responsive" alt="Responsive image">
+            </a>
+          </div>
+          <div class="col-md-4 col-sm-4 col-lg-4 col-xs-4">
+            <a href="detail.html">
+              <img src="img/arts/2.png" class="img-responsive" alt="Responsive image">
+            </a>
+          </div>
+          <div class="col-md-4 col-sm-4 col-lg-4 col-xs-4">
+            <a href="detail.html">
+              <img src="img/arts/3.png" class="img-responsive" alt="Responsive image">
+            </a>
+          </div>
+          <div class="col-md-4 col-sm-4 col-lg-4 col-xs-4">
+            <a href="detail.html">
+              <img src="img/arts/1.png" class="img-responsive" alt="Responsive image">
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Content finish -->
+      <div style="clear: both;"></div>
+      <!-- Footer -->
+      <div class="footer navbar-fixed-bottom" style="height:40px;background-color:#fff;border-top:#999 solid 1px;">
+        <div class="container">
+          <nav class="navbar navbar-default" id="footer-fixed" style="background-color:transparent;border: none;">
+            <div class="container-fluid">
+              <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 over-a" style="text-align: center;padding:0;">
+                <a href="#" class="glyphicon glyphicon-home" title="Home" style="display: block;font-size:24px;line-height: 40px;color:#000;"></a>
+              </div>
+              <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 over-a" style="text-align: center;padding:0;">
+                <a href="#" class="glyphicon glyphicon-search" title="Search" style="display: block;font-size:24px;line-height: 40px;color:#000;"></a>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 over-a" style="text-align: center;padding:0;">
+                <a href="#" class="glyphicon glyphicon-plus" title="New" style="display: block;font-size:24px;line-height: 40px;color:#000;"></a>
+              </div>
+              <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 over-a" style="text-align: center;padding:0;">
+                <a href="#" class="glyphicon glyphicon-heart" title="Feed" style="display: block;font-size:24px;line-height: 40px;color:#000;"></a>
+              </div>
+              <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 over-a" style="text-align: center;padding:0;">
+                <a href="index.html" class="glyphicon glyphicon-user" title="My Profile" style="display: block;font-size:24px;line-height: 40px;color:#000;"></a>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <!-- Footer Finish -->
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+      </body>
+      </html>
+
+      <script type="text/javascript">
+        $(document).ready(function(){  
+
+          $('#arrow').click(function(){
+            $("#like_this").slideToggle();
+          });
+
+          $('#prov_btn').click(function(){
+            $('#prov').slideToggle();
+          });
+
+          $('#follow_btn').click(function(){
+            $(this).popover('show');
+          });
+
+          $('#about').click(function(){
+            if($(this).css("overflow")==="hidden"){
+              $(this).css("overflow","auto");
+              $(this).css("text-overflow","inherit");
+              $(this).css("white-space","inherit");
+            }
+            else{
+              $(this).css("overflow","hidden");
+              $(this).css("text-overflow","ellipsis");
+              $(this).css("white-space","nowrap");
+            }
+
+          });
+        });
+        function loadmore(){
+    $.ajax({
+        url:your_controller/loadmore,
+        data:{
+          offset :$('#offset').val(),
+          limit :$('#limit').val()
+        },
+        type:json, 
+        success :function(data){
+            $('#load-more').prepand(data.view)
+            $('#offset').val(data.offset)
+            $('#limit').val(data.limit)
+        }
+    })
+}
+      </script>

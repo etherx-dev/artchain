@@ -1,0 +1,26 @@
+/*!
+ * Bootstrap v3.3.7 (http://getbootstrap.com)
+ * Copyright 2011-2016 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+body{font-family: "33535gillsansmt";}
+
+#footer-fixed .container-fluid .over-a{border-right: 1px #fff solid;}
+#footer-fixed .container-fluid .over-a:last-child{border-right:none;}
+
+#middle-nav a{color:#777;}
+#middle-nav li{color:#777;}
+
+
+/* alttaki slider */
+#owl-demo .item{
+  margin: 3px;
+}
+#owl-demo .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/* alttaki slider bitis */
+
+ /*# sourceMappingURL=bootstrap-theme.css.map */
