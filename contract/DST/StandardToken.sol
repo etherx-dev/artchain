@@ -1,3 +1,4 @@
+
 import "TokenInterface.sol";
 
 pragma solidity ^0.4.2;

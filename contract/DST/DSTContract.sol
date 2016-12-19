@@ -757,3 +757,6 @@ contract DSTContract is StandardToken{
     event BurnedAllRemainedTokens();
     
 }
+
+
+ 
