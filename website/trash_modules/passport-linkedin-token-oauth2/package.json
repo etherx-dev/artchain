@@ -1,0 +1,102 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "passport-linkedin-token-oauth2@^0.1.3",
+        "scope": null,
+        "escapedName": "passport-linkedin-token-oauth2",
+        "name": "passport-linkedin-token-oauth2",
+        "rawSpec": "^0.1.3",
+        "spec": ">=0.1.3 <0.2.0",
+        "type": "range"
+      },
+      "/home/laptop/jdkd/artchain/website"
+    ]
+  ],
+  "_from": "passport-linkedin-token-oauth2@>=0.1.3 <0.2.0",
+  "_id": "passport-linkedin-token-oauth2@0.1.3",
+  "_inCache": true,
+  "_location": "/passport-linkedin-token-oauth2",
+  "_nodeVersion": "0.10.35",
+  "_npmUser": {
+    "name": "blackening",
+    "email": "pointhomefinal@gmail.com"
+  },
+  "_npmVersion": "2.1.17",
+  "_phantomChildren": {
+    "oauth": "0.9.14",
+    "pause": "0.0.1",
+    "pkginfo": "0.2.3"
+  },
+  "_requested": {
+    "raw": "passport-linkedin-token-oauth2@^0.1.3",
+    "scope": null,
+    "escapedName": "passport-linkedin-token-oauth2",
+    "name": "passport-linkedin-token-oauth2",
+    "rawSpec": "^0.1.3",
+    "spec": ">=0.1.3 <0.2.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/passport-linkedin-token-oauth2/-/passport-linkedin-token-oauth2-0.1.3.tgz",
+  "_shasum": "61c4755e2112f4f1674c20ce93e7a9aba57f7868",
+  "_shrinkwrap": null,
+  "_spec": "passport-linkedin-token-oauth2@^0.1.3",
+  "_where": "/home/laptop/jdkd/artchain/website",
+  "author": {
+    "name": "Vladimir Katansky",
+    "email": "pointhomefinal@gmail.com",
+    "url": "http://katansky-blog.com/"
+  },
+  "bugs": {
+    "url": "https://github.com/Blackening999/passport-linkedin-token-oauth2/issues"
+  },
+  "dependencies": {
+    "passport-oauth": "0.1.x",
+    "pkginfo": "0.2.x"
+  },
+  "description": "LinkedIn token authentication strategy for Passport.",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "61c4755e2112f4f1674c20ce93e7a9aba57f7868",
+    "tarball": "https://registry.npmjs.org/passport-linkedin-token-oauth2/-/passport-linkedin-token-oauth2-0.1.3.tgz"
+  },
+  "engines": {
+    "node": ">= 0.4.0"
+  },
+  "gitHead": "d3d3c8bce5eaae2f8f0c962748fa3dbc03891c64",
+  "homepage": "https://github.com/Blackening999/passport-linkedin-token-oauth2",
+  "keywords": [
+    "passport-exchange-code",
+    "passport exchange code",
+    "passport code",
+    "passport oauth strategy code"
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/MIT"
+    }
+  ],
+  "main": "./lib/passport-linkedin-token-oauth2",
+  "maintainers": [
+    {
+      "name": "blackening",
+      "email": "pointhomefinal@gmail.com"
+    }
+  ],
+  "name": "passport-linkedin-token-oauth2",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Blackening999/passport-linkedin-token-oauth2.git"
+  },
+  "scripts": {
+    "test": "\"echo \\\"Error: no test specified\\\" && exit 1\""
+  },
+  "version": "0.1.3"
+}
