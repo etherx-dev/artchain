@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>artchain</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+  <link href="css/font.css" rel="stylesheet">
+
+
+  <!-- CLIENTS -->
+  <script src="js/jssor.slider-22.0.6.min.js" type="text/javascript"></script>
+
+
+
+  <!-- VALIDATE FORM AND FOOTER 1_11_1 -->
+          <script src="js/jquery_1_11_1.js"></script>
+
+
+  <!-- BUNUN CSS KODLARI DA VAR CUSTOM CSS TE -->
+  <script type="text/javascript">
+    jssor_1_slider_init = function() {
+
+      var jssor_1_options = {
+        $AutoPlay: true,
+        $AutoPlaySteps: 4,
+        $SlideDuration: 160,
+        $SlideWidth: 200,
+        $SlideSpacing: 3,
+        $Cols: 4,
+        $ArrowNavigatorOptions: {
+          $Class: $JssorArrowNavigator$,
+          $Steps: 4
+        },
+        $BulletNavigatorOptions: {
+          $Class: $JssorBulletNavigator$,
+          $SpacingX: 1,
+          $SpacingY: 1
+        }
+      };
+
+      var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+      /*responsive code begin*/
+      /*you can remove responsive code if you don't want the slider scales while window resizing*/
+      function ScaleSlider() {
+        var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+        if (refSize) {
+          refSize = Math.min(refSize, 809);
+          jssor_1_slider.$ScaleWidth(refSize);
+        }
+        else {
+          window.setTimeout(ScaleSlider, 30);
+        }
+      }
+      ScaleSlider();
+      $Jssor$.$AddEvent(window, "load", ScaleSlider);
+      $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+      $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+      /*responsive code end*/
+    };
+  </script>
+  <!-- CLIENTS FINISH -->
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    </head>
+    <body>
+
+      <div class="container-fluid" style="margin:0 0 14px 0;">
+        <header>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12" style="color:#000;"><h3 style="font-weight: bold;">artchain</h3></div>
+            </div>
+          </div>
+        </header>
+      </div>
+
+
+<!-- SIGNUP BUTTONS -->
+
+<div class="container" style="margin-bottom: 50px;">
+  <div class="row" style="text-align: center;margin-bottom: 10px;">
+    <h2>artist</h2>
+  </div>
+    <form id="defaultForm" method="post" class="form-horizontal" action="target.php">
+
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">forename</label>
+                            <div class="col-lg-5">
+                                <input type="text" class="form-control" name="forename" />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">surname</label>
+                            <div class="col-lg-5">
+                                <input type="text" class="form-control" name="surname" />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">username</label>
+                            <div class="col-lg-5">
+                                <input type="text" class="form-control" name="username" />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">email</label>
+                            <div class="col-lg-5">
+                                <input type="text" class="form-control" name="email" />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">pasword</label>
+                            <div class="col-lg-5">
+                                <input type="password" class="form-control" name="password" />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">retype password</label>
+                            <div class="col-lg-5">
+                                <input type="password" class="form-control" name="confirmPassword" />
+                            </div>
+                        </div>
+<!--
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label" id="captchaOperation"></label>
+                            <div class="col-lg-2">
+                                <input type="text" class="form-control" name="captcha" />
+                            </div>
+                        </div>
+                        -->
+
+                        <div class="form-group" style="margin-bottom: 50px;">
+                            <div class="col-lg-5 col-lg-offset-3">
+                                <button type="submit" class="btn btn-primary btn-lg btn-block" name="signup" value="Sign up">Sign up</button>
+                               
+                            </div>
+                        </div>
+                    </form>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // Generate a simple captcha
+    function randomNumber(min, max) {
+        return Math.floor(Math.random() * (max - min + 1) + min);
+    };
+    $('#captchaOperation').html([randomNumber(1, 100), '+', randomNumber(1, 200), '='].join(' '));
+
+    $('#defaultForm').bootstrapValidator({
+//        live: 'disabled',
+        message: 'This value is not valid',
+        feedbackIcons: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+            forename: {
+                validators: {
+                    notEmpty: {
+                        message: 'the forename is required and can\'t be empty'
+                    }
+                }
+            },
+            surname: {
+                validators: {
+                    notEmpty: {
+                        message: 'the surname is required and can\'t be empty'
+                    }
+                }
+            },
+            username: {
+                message: 'the username is not valid',
+                validators: {
+                    notEmpty: {
+                        message: 'the username is required and cannot be empty'
+                    },
+                    stringLength: {
+                        min: 4,
+                        max: 20,
+                        message: 'the username must be more than 4 and less than 20 characters long'
+                    },
+                    regexp: {
+                        regexp: /^[a-zA-Z0-9_\.]+$/,
+                        message: 'the username can only consist of alphabetical, number, dot and underscore'
+                    },
+                    different: {
+                        field: 'password,confirmPassword',
+                        message: 'the username and password cannot be the same as each other'
+                    }
+                }
+            },
+            email: {
+                validators: {
+                    notEmpty: {
+                        message: 'the email address is required and can\'t be empty'
+                    },
+                    emailAddress: {
+                        message: 'the input is not a valid email address'
+                    }
+                }
+            },
+            password: {
+                validators: {
+                    notEmpty: {
+                        message: 'the password is required and cannot be empty'
+                    },
+                    identical: {
+                        field: 'confirmPassword',
+                        message: 'the password and its confirm are not the same'
+                    },
+                    different: {
+                        field: 'username',
+                        message: 'the password cannot be the same as forename'
+                    }
+                }
+            },
+            confirmPassword: {
+                validators: {
+                    notEmpty: {
+                        message: 'the confirm password is required and cannot be empty'
+                    },
+                    identical: {
+                        field: 'password',
+                        message: 'the password and its confirm are not the same'
+                    },
+                    different: {
+                        field: 'username',
+                        message: 'the password cannot be the same as forename'
+                    }
+                }
+            },
+            captcha: {
+                validators: {
+                    callback: {
+                        message: 'Wrong answer',
+                        callback: function(value, validator) {
+                            var items = $('#captchaOperation').html().split(' '), sum = parseInt(items[0]) + parseInt(items[2]);
+                            return value == sum;
+                        }
+                    }
+                }
+            }
+        }
+    });
+
+    // Validate the form manually
+    $('#validateBtn').click(function() {
+        $('#defaultForm').bootstrapValidator('validate');
+    });
+
+  
+});
+</script>
+
+
+
+<!-- SIGNUP BUTTONS FINISH -->
+
+
+
+
+        <div style="clear: both;"></div>
+        <!-- Footer -->
+        <div class="footer navbar-fixed-bottom" style="height:40px;background-color:#fff;border-top:#999 solid 1px;">
+          <div class="container">
+            <nav class="navbar navbar-default" id="footer-fixed" style="background-color:transparent;border: none;">
+              <div class="container-fluid">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 over-a" style="text-align: center;padding:0;">
+                  <a href="#" class="glyphicon glyphicon-home" title="Home" style="display: block;font-size:24px;line-height: 40px;color:#000;"></a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 over-a" style="text-align: center;padding:0;">
+                  <a href="#" class="glyphicon glyphicon-search" title="Search" style="display: block;font-size:24px;line-height: 40px;color:#000;"></a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 over-a" style="text-align: center;padding:0;">
+                  <a href="#" class="glyphicon glyphicon-plus" title="New" style="display: block;font-size:24px;line-height: 40px;color:#000;"></a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 over-a" style="text-align: center;padding:0;">
+                  <a href="#" class="glyphicon glyphicon-heart" title="Feed" style="display: block;font-size:24px;line-height: 40px;color:#000;"></a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 over-a" style="text-align: center;padding:0;">
+                  <a href="index.html" class="glyphicon glyphicon-user" title="My Profile" style="display: block;font-size:24px;line-height: 40px;color:#000;"></a>
+                </div>
+              </nav>
+            </div>
+          </div>
+          <!-- Footer Finish -->
+
+          <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+          <!-- Include all compiled plugins (below), or include individual files as needed -->
+          <script src="js/bootstrap.min.js"></script>
+  <script src="js/submit.js" type="text/javascript"></script>
+        </body>
+        </html>
+
+        <script type="text/javascript">
+          $(document).ready(function(){  
+
+            $('#arrow').click(function(){
+              $("#like_this").slideToggle();
+            });
+
+            $('#prov_btn').click(function(){
+              $('#prov').slideToggle();
+            });
+
+            $('#follow_btn').click(function(){
+              $(this).popover('show');
+            });
+/*
+          $('#about').click(function(){
+            if($(this).css("overflow")==="hidden"){
+              $(this).css("overflow","auto");
+              $(this).css("text-overflow","inherit");
+              $(this).css("white-space","inherit");
+            }
+            else{
+              $(this).css("overflow","hidden");
+              $(this).css("text-overflow","ellipsis");
+              $(this).css("white-space","nowrap");
+            }
+          });*/
+        });
+          function loadmore(){
+            $.ajax({
+              url:your_controller/loadmore,
+              data:{
+                offset :$('#offset').val(),
+                limit :$('#limit').val()
+              },
+              type:json, 
+              success :function(data){
+                $('#load-more').prepand(data.view)
+                $('#offset').val(data.offset)
+                $('#limit').val(data.limit)
+              }
+            })
+          }
+        </script>
