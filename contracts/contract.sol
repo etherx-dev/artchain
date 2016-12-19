@@ -26,7 +26,7 @@ contract Token {
 
 
 contract Association is owned, tokenRecipient {
-
+/* Below this is still to be modified  */
     /* Contract Variables and events */
     uint public minimumQuorum;
     uint public debatingPeriodInMinutes;
