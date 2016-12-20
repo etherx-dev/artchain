@@ -37,7 +37,114 @@ body{font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;}
   }
 }
 
+
+
+
+.check{
+	padding-top: 1em;
+	padding-right: 3em;
+	
+	
+}
+
  /*# sourceMappingURL=bootstrap-theme.css.map */
+ /*********************************************************************************/
+
+ 
+ 
+ 
+ 
+ 
+/*********************************************************************************/
+/* Nav                                                                           */
+/*********************************************************************************/
+
+	#nav
+	{
+		position: absolute;
+		right: 0em;
+		top: 1em;
+		
+	}
+
+		#nav > ul > li
+		{
+			float: left;
+		}
+		
+			#nav > ul > li:last-child
+			{
+				padding-right: 0.5em;
+			}
+
+			#nav > ul > li > a,
+			#nav > ul > li > span
+			{
+				display: block;
+				margin-left: 0em;
+				padding: 0.8em 1.5em;
+				letter-spacing: 0.1em;
+				text-decoration: none;
+				font-size: 1em;
+				outline: 0;
+				color: #333;
+				
+			}
+
+			#nav li.active a
+			{
+				background: blue;
+				border-radius: 3%;
+				color: #FFF;
+			}
+
+			#nav > ul > li > ul
+			{
+				display: none;
+			}
+			ul
+			{
+			list-style-type: none;
+			}
+			
+			
+	/**********************************************
+					Responsive nav 
+		***********************************/
+		
+		@media (max-width: 599px) {
+  #nav {
+    width: 100%;
+    top: 60px;
+  }
+  #nav:before {
+    content: '\2630';
+    display: block;
+    position: absolute;
+    right: 3%;
+    top: -50px;
+    line-height: 40px;
+    font-size: 1.4em;
+    cursor: pointer;
+  }
+  #nav ul {
+    background: #222;
+    width: 100%;
+    margin: 0px;
+  }
+  #nav ul li {
+    float: none;
+	display: none;
+  }
+  #nav ul li a {
+    padding: 10px 3%;
+    line-height: 20px;
+    border-top: 1px solid #333;
+  }
+}
+			
+			
+/*********************************************************************************/
 
 
 /* jssor slider bullet navigator skin 03 css */
