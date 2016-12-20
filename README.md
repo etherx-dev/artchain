@@ -1,6 +1,6 @@
-  artchain
+# artchain
 
-Contents:
+## Contents:
    1. artchain_market/ -
                           Centralised Marketplace prototype.  (IN Progress)
                             example implementation of artchain on a live fully functional marketplace.
