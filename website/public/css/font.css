@@ -1,0 +1,11 @@
+@font-face {
+	font-family: '33535gillsansmt';
+	src: url('./33535gillsansmt.eot');
+	src: local('33535gillsansmt'), url('./33535gillsansmt.woff') format('woff'), url('./33535gillsansmt.ttf') format('truetype');
+}
+/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_1416">Text with this font applied</p> */
+.fontsforweb_fontid_1416 {
+	font-family: '33535gillsansmt' !important;
+}
+
+/* Font downloaded from FontsForWeb.com */

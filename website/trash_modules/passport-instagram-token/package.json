@@ -1,0 +1,115 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "passport-instagram-token@^2.3.0",
+        "scope": null,
+        "escapedName": "passport-instagram-token",
+        "name": "passport-instagram-token",
+        "rawSpec": "^2.3.0",
+        "spec": ">=2.3.0 <3.0.0",
+        "type": "range"
+      },
+      "/home/laptop/jdkd/artchain/website"
+    ]
+  ],
+  "_from": "passport-instagram-token@>=2.3.0 <3.0.0",
+  "_id": "passport-instagram-token@2.3.0",
+  "_inCache": true,
+  "_location": "/passport-instagram-token",
+  "_nodeVersion": "5.4.1",
+  "_npmUser": {
+    "name": "ghaiklor",
+    "email": "ghaiklor@gmail.com"
+  },
+  "_npmVersion": "3.5.3",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "passport-instagram-token@^2.3.0",
+    "scope": null,
+    "escapedName": "passport-instagram-token",
+    "name": "passport-instagram-token",
+    "rawSpec": "^2.3.0",
+    "spec": ">=2.3.0 <3.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/passport-instagram-token/-/passport-instagram-token-2.3.0.tgz",
+  "_shasum": "099b301a09a1b43d40c451325fc5ead692f4c099",
+  "_shrinkwrap": null,
+  "_spec": "passport-instagram-token@^2.3.0",
+  "_where": "/home/laptop/jdkd/artchain/website",
+  "author": {
+    "name": "ghaiklor"
+  },
+  "bugs": {
+    "url": "https://github.com/ghaiklor/passport-instagram-token/issues"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "dependencies": {
+    "passport-oauth": "1.0.0"
+  },
+  "description": "Passport strategy for authenticating with Instagram via OAuth2 access tokens",
+  "devDependencies": {
+    "babel-cli": "6.4.5",
+    "babel-plugin-add-module-exports": "0.1.2",
+    "babel-preset-es2015": "6.3.13",
+    "chai": "3.4.1",
+    "chai-passport-strategy": "0.2.0",
+    "coveralls": "2.11.6",
+    "cz-conventional-changelog": "1.1.5",
+    "isparta": "4.0.0",
+    "mocha": "2.4.2",
+    "semantic-release": "4.3.5",
+    "sinon": "1.17.3"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "099b301a09a1b43d40c451325fc5ead692f4c099",
+    "tarball": "https://registry.npmjs.org/passport-instagram-token/-/passport-instagram-token-2.3.0.tgz"
+  },
+  "gitHead": "eb8f63461a3a79ce43a4ec9c140dbd6f3f25053a",
+  "homepage": "https://github.com/ghaiklor/passport-instagram-token",
+  "keywords": [
+    "passport",
+    "instagram",
+    "token",
+    "auth",
+    "authentication"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "maintainers": [
+    {
+      "name": "ghaiklor",
+      "email": "ghaiklor@gmail.com"
+    }
+  ],
+  "name": "passport-instagram-token",
+  "optionalDependencies": {},
+  "publishConfig": {
+    "tag": "latest"
+  },
+  "readme": "ERROR: No README data found!",
+  "release": {
+    "branch": "master"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ghaiklor/passport-instagram-token.git"
+  },
+  "scripts": {
+    "compile": "babel src --out-dir lib",
+    "coveralls": "cat coverage/lcov.info | coveralls",
+    "prepublish": "npm run compile",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "test": "babel-node ./node_modules/.bin/isparta cover _mocha"
+  },
+  "version": "2.3.0"
+}

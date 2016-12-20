@@ -1,0 +1,172 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "feathers-mongoose@^3.6.1",
+        "scope": null,
+        "escapedName": "feathers-mongoose",
+        "name": "feathers-mongoose",
+        "rawSpec": "^3.6.1",
+        "spec": ">=3.6.1 <4.0.0",
+        "type": "range"
+      },
+      "/home/laptop/jdkd/artchain/website"
+    ]
+  ],
+  "_from": "feathers-mongoose@>=3.6.1 <4.0.0",
+  "_id": "feathers-mongoose@3.6.1",
+  "_inCache": true,
+  "_location": "/feathers-mongoose",
+  "_nodeVersion": "7.0.0",
+  "_npmOperationalInternal": {
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/feathers-mongoose-3.6.1.tgz_1479188400357_0.39211173029616475"
+  },
+  "_npmUser": {
+    "name": "daffl",
+    "email": "daff@neyeon.de"
+  },
+  "_npmVersion": "3.10.8",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "feathers-mongoose@^3.6.1",
+    "scope": null,
+    "escapedName": "feathers-mongoose",
+    "name": "feathers-mongoose",
+    "rawSpec": "^3.6.1",
+    "spec": ">=3.6.1 <4.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/feathers-mongoose/-/feathers-mongoose-3.6.1.tgz",
+  "_shasum": "fa889c648adbc3b232350e618080495fb45f6ebb",
+  "_shrinkwrap": null,
+  "_spec": "feathers-mongoose@^3.6.1",
+  "_where": "/home/laptop/jdkd/artchain/website",
+  "author": {
+    "name": "Feathers contributors",
+    "email": "hello@feathersjs.com",
+    "url": "https://feathersjs.com"
+  },
+  "bugs": {
+    "url": "https://github.com/feathersjs/feathers-mongoose/issues"
+  },
+  "contributors": [
+    {
+      "name": "Eric Kryski",
+      "email": "e.kryski@gmail.com",
+      "url": "http://erickryski.com"
+    },
+    {
+      "name": "Glavin Wiechert",
+      "email": "glavin.wiechert@gmail.com",
+      "url": "https://github.com/Glavin001"
+    },
+    {
+      "name": "Marshall Thompson",
+      "email": "marshall@creativeideal.net",
+      "url": "https://github.com/marshallswain"
+    }
+  ],
+  "dependencies": {
+    "feathers-commons": "^0.8.4",
+    "feathers-errors": "^2.0.1",
+    "feathers-query-filters": "^2.0.0",
+    "lodash.omit": "^4.3.0",
+    "uberproto": "^1.2.0"
+  },
+  "description": "A Feathers service adapter for the Mongoose ORM",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.18.2",
+    "babel-plugin-add-module-exports": "^0.2.0",
+    "babel-preset-es2015": "^6.1.2",
+    "body-parser": "^1.14.1",
+    "chai": "^3.4.1",
+    "eslint-if-supported": "^1.0.1",
+    "feathers": "^2.0.0",
+    "feathers-hooks": "^1.1.0",
+    "feathers-rest": "^1.5.2",
+    "feathers-service-tests": "^0.9.1",
+    "feathers-socketio": "^1.3.3",
+    "istanbul": "^1.1.0-alpha.1",
+    "mocha": "^3.0.0",
+    "mongoose": "^4.5.2",
+    "rimraf": "^2.5.2",
+    "semistandard": "^9.1.0",
+    "sinon": "^1.17.3",
+    "sinon-chai": "^2.8.0"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "dist": {
+    "shasum": "fa889c648adbc3b232350e618080495fb45f6ebb",
+    "tarball": "https://registry.npmjs.org/feathers-mongoose/-/feathers-mongoose-3.6.1.tgz"
+  },
+  "engines": {
+    "node": ">= 4"
+  },
+  "gitHead": "e328f99ee094d6121e2044151e3683d91682249b",
+  "homepage": "https://github.com/feathersjs/feathers-mongoose",
+  "keywords": [
+    "feathers",
+    "feathers-plugin",
+    "REST",
+    "Socket.io",
+    "realtime",
+    "mongodb",
+    "mongo",
+    "mongoose",
+    "service"
+  ],
+  "license": "MIT",
+  "main": "lib/",
+  "maintainers": [
+    {
+      "name": "daffl",
+      "email": "daff@neyeon.de"
+    },
+    {
+      "name": "ekryski",
+      "email": "e.kryski@gmail.com"
+    },
+    {
+      "name": "marshallswain",
+      "email": "marshall@creativeideal.net"
+    }
+  ],
+  "name": "feathers-mongoose",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/feathersjs/feathers-mongoose.git"
+  },
+  "scripts": {
+    "changelog": "github_changelog_generator && git add CHANGELOG.md && git commit -am \"Updating changelog\"",
+    "compile": "rimraf lib/ && babel -d lib/ src/",
+    "coverage": "istanbul cover node_modules/mocha/bin/_mocha -- --opts mocha.opts",
+    "lint": "eslint-if-supported semistandard --fix",
+    "mocha": "mocha --opts mocha.opts",
+    "prepublish": "npm run compile",
+    "publish": "git push origin --tags && npm run changelog && git push origin",
+    "release:major": "npm version major && npm publish",
+    "release:minor": "npm version minor && npm publish",
+    "release:patch": "npm version patch && npm publish",
+    "start": "node example/app",
+    "test": "npm run compile && npm run lint && npm run coverage",
+    "watch": "babel --watch -d lib/ src/"
+  },
+  "semistandard": {
+    "env": [
+      "mocha"
+    ],
+    "ignore": [
+      "/lib"
+    ]
+  },
+  "version": "3.6.1"
+}

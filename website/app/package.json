@@ -1,0 +1,54 @@
+{
+  "name": "Artchain",
+  "description": "The art industry is rife with undetected fraud. Currently, the art market suffers from              incompleteness of information due a lack of trust among its participants. Establishing the             authenticity of art assets is expensive and often disputed which leadstoartificiallyraisedcosts               of conveyancing in an attempt to protect ‒ imperfectly ‒ againstfraud.Transactionofartassets                is regulated neither by deed nor by a public ‘art registry’ unlike similartangibleassetclasses ‒                 land &amp; vehicles ‒ which are exchanged more reliably &amp; frictionlessly. Such certification cannot              exist usinglegacytechnologyduetothecompromisesofprivateinformationitwouldentail.The               unique property of the blockchain is its ability to provide immutable proof that x is y using a                  distributed ledger, unmatched cryptographic security, and smart contract conveyancing.         artchain ​‒ a gold standard certification system for art assets ‒ can harmonise the art market                with its analogues, preserve the security of private ownership information, and provide all             counterparties the guarantee that they will come out of a transaction with satisfaction. Once              artchain​has been established,theartmarketcanbesecuritised,whichhasheretoforebeenan               impossibility. This is the Blockchain Revolution. Together,withthenewconsensus​artchain​can             provide, we can build a coalition of art industry professionals and participants facingthefuture               of mutual self-regulation of transactions and provenance.",
+  "version": "0.0.0",
+  "homepage": "",
+  "main": "src/",
+  "keywords": [
+    "feathers"
+  ],
+  "license": "MIT",
+  "repository": {},
+  "author": {},
+  "contributors": [],
+  "bugs": {},
+  "engines": {
+    "node": ">= 0.12.0"
+  },
+  "scripts": {
+    "test": "npm run jshint && npm run mocha",
+    "jshint": "jshint src/. test/. --config",
+    "start": "node src/",
+    "mocha": "mocha test/ --recursive"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "compression": "^1.6.2",
+    "cors": "^2.8.1",
+    "feathers": "^2.0.2",
+    "feathers-authentication": "^0.7.12",
+    "feathers-configuration": "^0.3.3",
+    "feathers-errors": "^2.5.0",
+    "feathers-hooks": "^1.7.0",
+    "feathers-mongoose": "^3.6.1",
+    "feathers-rest": "^1.5.2",
+    "feathers-socketio": "^1.4.2",
+    "mongoose": "^4.7.2",
+    "passport": "^0.3.2",
+    "passport-facebook": "^2.1.1",
+    "passport-facebook-token": "^3.3.0",
+    "passport-google-oauth20": "^1.0.0",
+    "passport-google-token": "^0.1.2",
+    "passport-instagram": "^1.0.0",
+    "passport-instagram-token": "^2.3.0",
+    "passport-linkedin-oauth2": "^1.4.1",
+    "passport-linkedin-token-oauth2": "^0.1.3",
+    "serve-favicon": "^2.3.2",
+    "winston": "^2.3.0"
+  },
+  "devDependencies": {
+    "jshint": "^2.9.4",
+    "mocha": "^3.2.0",
+    "request": "^2.79.0"
+  }
+}
