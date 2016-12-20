@@ -1,5 +1,5 @@
 pragma solidity ^0.4.2;
-/* The token is used as appraising artwork */
+/* The token used to issuing artwork */
 contract token { mapping (address => uint256) public balanceOf;  }
 
 contract owned {
