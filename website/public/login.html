@@ -95,19 +95,19 @@
     <h2>login</h2>
   </div>
   <div style="clear:both;"></div>
-    <form id="defaultForm" method="post" class="form-horizontal" action="target.php">
+    <form id="defaultForm" method="post" class="form-horizontal" action="/auth/local">
 
                         <div class="form-group">
                             <label class="col-lg-3 control-label">username/email</label>
                             <div class="col-lg-5">
-                                <input type="text" class="form-control" name="username_email" />
+                                <input class="form-control" type="email" name="email" placeholder="email" />
                             </div>
                         </div>
 
                         <div class="form-group">
                             <label class="col-lg-3 control-label">password</label>
                             <div class="col-lg-5">
-                                <input type="password" class="form-control" name="password" />
+                                <input type="password" class="form-control" type="password" name="password" placeholder="password"/>
                             </div>
                         </div>
 <!--
@@ -121,9 +121,7 @@
 
                         <div class="form-group" style="margin-bottom: 50px;">
                             <div class="col-lg-5 col-lg-offset-3">
-                                <button type="submit" class="btn btn-primary btn-lg btn-block" name="signup" value="Sign up">login</button>
-                                <a href="sign-up-1.html" class="btn btn-danger btn-lg btn-block">sign up</a>
-                               
+                                <button type="submit" class="btn btn-primary btn-lg btn-block">login</button>
                             </div>
                         </div>
                     </form>
@@ -171,7 +169,7 @@
         </html>
 
         <script type="text/javascript">
-          $(document).ready(function(){  
+          $(document).ready(function(){
 
             $('#arrow').click(function(){
               $("#like_this").slideToggle();
@@ -205,7 +203,7 @@
                 offset :$('#offset').val(),
                 limit :$('#limit').val()
               },
-              type:json, 
+              type:json,
               success :function(data){
                 $('#load-more').prepand(data.view)
                 $('#offset').val(data.offset)
