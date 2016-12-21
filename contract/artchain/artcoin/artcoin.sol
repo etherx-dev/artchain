@@ -5,11 +5,11 @@ import "./StandardToken.sol";
 
 
 /*
- * Artcoin
+ * artcoin
  *
  * 
  */
-contract CrowdsaleToken is StandardToken {
+contract artcoin is StandardToken {
   
   // name of the artcoin ERC20 token
   string public name = "artcoin";
