@@ -13,6 +13,7 @@ contract artRegistry {
     struct Artwork {
         exists existence; 
         string artistName; // name of artist
+        string titleofwork, // title of artwork
         uint dateCreated; // dateCreated in timestamp
         uint issueDate; // issueDate in timestamp
         Appraiser[] appraisers;
@@ -22,5 +23,20 @@ contract artRegistry {
         string name;
         string review;
     }
+    
+    function artDetails(uint artId) constant returns(
+      exists existence, 
+      string titleofwork, 
+      string artistname, 
+      uint datecreated, 
+      uint issuedate) {
 
+        return (
+            artworks[artId].exists,
+            artworks[artId].titleofwork,
+            artworks[artId].artistname,
+            artworks[artId].datecreated,
+            artworks[artId].issuedate
+        );
+    }
 }
