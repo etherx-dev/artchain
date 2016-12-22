@@ -12,39 +12,39 @@ art assets secured on the blockchain
 * appraisal and conveyancing costs lowered with our distributed provenance ledger
 * our distributed reputation system allows great work to gain traction in the marketplace and promotion to a wide public on an intuitive interface
 
-### What has been developed so far?
+## What has been developed so far?
 
-## artchain marketplace demo
+### artchain marketplace demo
 ```
 the artchain marketplace demo is written in PHP using codeigniter.
 We wrote this to demonstrate how an online marketplace can utilise the decentralised data from artchain.
 ```
 [See it in action](http://artchainmarketdemo.artchain.org).
 
-## artchain smart contracts and library.
+### artchain smart contracts and library.
 ```
 We have build some prototype contracts
-```
+
 [contract]
   |-- .
   |-- [artchain]
           |-- .
           |-- artRegistry.sol
           |-- 
-          
+``` 
 [artRegistry.sol](https://github.com/artchain/artchain/blob/master/contract/artchain/artRegistry.sol)
 
     Registers artwork on the ethereum blockchain, allowing users to appraise.
     
-## Whitepaper
+### Whitepaper
 
 
 [whitepaper v1](https://github.com/artchain/artchain/blob/master/whitepaper/artchain%20%E2%80%92%20art%20unchain%E2%80%99d.pdf) by Laurenzo Mefsut.
 
-## Website
+### Website
 
 
 readme is under modification
 ## Testing
-### License
+## License
 
