@@ -43,7 +43,13 @@ contract artRegistry {
       );
   }
   
-  function appraiseArtwork(uint artId, string name,string review) returns(uint apprId) {
+  function appraiseArtwork(
+    uint artId,
+    string name,
+    string review
+  ) returns(
+    uint apprId
+    ) {
       if(bytes(name).length != 0 || bytes(review).length != 0) {
         apprId = artworks[artId].appraisers.length++; // assign ID for the appraisal
         artworks[artId].appraisers[apprId].name = name; 
@@ -55,8 +61,13 @@ contract artRegistry {
   }
 
   
-  function publishArtwork(string titleofwork, string artistName, uint dateCreated) returns(uint artId) {
-    
+  function publishArtwork(
+    string titleofwork,
+    string artistName,
+    uint dateCreated
+  ) returns(
+    uint artId
+  ) {
     if(bytes(titleofwork).length == 0 || bytes(artistName).length == 0) {
       artId = artworks.length++;
       artworks[artId].titleofwork = titleofwork;
@@ -67,8 +78,6 @@ contract artRegistry {
     } else {
       throw;
     }
-    
-
   }
   
   // returns total number of artworks on registry
