@@ -29,8 +29,13 @@ We have build some prototype contracts
 [artRegistry.sol](https://github.com/artchain/artchain/blob/master/contract/artchain/artRegistry.sol)
 
     Registers artwork on the ethereum blockchain, allowing users to appraise.
+    
+## Whitepaper
 
-  readme is under modification
+[whitepaper v1](https://github.com/artchain/artchain/blob/master/whitepaper/artchain%20%E2%80%92%20art%20unchain%E2%80%99d.pdf) written by Laurenzo Mefsut.
+
+
+readme is under modification
 ## Testing
 ### License
 
