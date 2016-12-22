@@ -1,33 +1,20 @@
 # artchain
 
-## Contents:
-   1. artchain_market/ -
-                          Centralised Marketplace prototype.  (IN Progress)
-                            example implementation of artchain on a live fully functional marketplace.
-   2. contract/
-               DST/ - 
-                      Contracts from hack.ether.camp repo, relevant to art.token issued on our page                                                              https://hack.ether.camp/public/artchain
-               artchain/
-                        artcoin/ - ERC20 token which powers artcoin + relevant functions including 1:1 exchange of ART.Token for artcoin.
-                        
-   3. 
-                      
+## What is artchain?
 
-Building:
-```
-$ npm install gulp-cli -g
-$ npm install
-$ gulp
-```
+art assets secured on the blockchain
 
-Testing:
-```
-$ gulp test
-```
+* the world's first asset registry and deed exchange for art assets
+* a single, secure marketplace for collectors, art brokers, and artists to exchange art assets with full provenance guaranteed
 
-Running:
-```
-$ cd web
-$ npm install http-server -g
-$ http-server
-```
+* secure exchange via smart contracts and escrow accounts all hashed on the blockchain for full satisfaction for all parties from every transaction
+
+* appraisal and conveyancing costs lowered with our distributed provenance ledger
+* our distributed reputation system allows great work to gain traction in the marketplace and promotion to a wide public on an intuitive interface
+
+## Where can i find the smart contracts?
+We have developed some prototypes contracts for artchain. 
+
+[artRegistry.sol](https://github.com/artchain/artchain/blob/master/contract/artchain/artRegistry.sol)
+
+  readme is under modification
