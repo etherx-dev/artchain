@@ -28,6 +28,8 @@ We have build some prototype contracts
 
 [artRegistry.sol](https://github.com/artchain/artchain/blob/master/contract/artchain/artRegistry.sol)
 
+    Registers artwork on the ethereum blockchain, allowing users to appraise.
+
   readme is under modification
 ## Testing
 ### License
