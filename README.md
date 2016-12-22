@@ -29,7 +29,6 @@ We have build some prototype contracts
 [artRegistry.sol](https://github.com/artchain/artchain/blob/master/contract/artchain/artRegistry.sol)
 
   readme is under modification
-
-
+## Testing
 ### License
 
