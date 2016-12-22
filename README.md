@@ -12,8 +12,13 @@ art assets secured on the blockchain
 * appraisal and conveyancing costs lowered with our distributed provenance ledger
 * our distributed reputation system allows great work to gain traction in the marketplace and promotion to a wide public on an intuitive interface
 
-## Where can i find the smart contracts?
-We have developed some prototypes contracts for artchain. 
+## What has been developed so far?
+
+# artchain marketplace demo
+```
+the artchain marketplace demo is written in PHP using codeigniter. We wrote this to demonstrate how an online marketplace can utilise the decentralised data from artchain, [See it in action](http://artchainmarketdemo.artchain.org).
+```
+
 
 [artRegistry.sol](https://github.com/artchain/artchain/blob/master/contract/artchain/artRegistry.sol)
 
