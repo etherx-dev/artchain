@@ -16,11 +16,14 @@ with open('c:\Users\em\Desktop\hack.ether.camp.memberaccounts.distinct.txt', 'r'
         if line:
             addresslist.append(line)
 accounttxdata = []
-f = open("c:\Users\em\Desktop\hack.ether.camp.memberaccounts.txlist.txt", 'w')
 i = 0
 for address in addresslist:
     txlist = gettxlist("0x"+address)
-    f.write("%s\n" % address)
+    accounttxdata.append(txlist)
     i = i+1
     print txlist, i
+
+f = open("c:\Users\em\Desktop\hack.ether.camp.memberaccounts.txlist.txt", 'w')
+for txlist in accounttxdata:
+    f.write("%s\n" % txlist)
 f.close()
