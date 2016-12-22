@@ -6,7 +6,7 @@ import time, urllib2, json, re
 def gettxlist(address):
     url = "http://api.etherscan.io/api?module=account&action=txlist&address="+address+"&startblock=0&endblock=99999999&sort=asc&apikey=JG9W6QD5CZFHBBSSSZVNZG3JXE3DAJYFBC"
     response = urllib2.urlopen(url)
-    data = json.loads(response.read())
+    data = response.read()
     return data
 
 addresslist = []
