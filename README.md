@@ -12,11 +12,13 @@ art assets secured on the blockchain
 * appraisal and conveyancing costs lowered with our distributed provenance ledger
 * our distributed reputation system allows great work to gain traction in the marketplace and promotion to a wide public on an intuitive interface
 
-## What has been developed so far?
+# What has been developed so far?
 
-# artchain marketplace demo
+## artchain marketplace demo
 ```
-the artchain marketplace demo is written in PHP using codeigniter. We wrote this to demonstrate how an online marketplace can utilise the decentralised data from artchain, [See it in action](http://artchainmarketdemo.artchain.org).
+the artchain marketplace demo is written in PHP using codeigniter.
+We wrote this to demonstrate how an online marketplace can utilise the decentralised data from artchain.
+[See it in action](http://artchainmarketdemo.artchain.org).
 ```
 
 
