@@ -33,14 +33,17 @@ We have build some prototype contracts
                   |-- .
                   |-- artcoin.sol
           |-- artRegistry.sol
-          |-- 
+          |-- artchain.sol
 ``` 
 [artcoin.sol](https://github.com/artchain/artchain/blob/master/contract/artchain/artcoin/artcoin.sol)
 
-    artcoin will be used on the distributed platform.
-    purchasable 1:1 with Ether, 10:1 with ART.token
-    more details will be available soon. 
+    artcoin will be utilised on the distributed artchain platform.
+    purchasable 1:1 with Ether, 10:1 with ART.Token claimed from our hackethon.
     
+[artchain.sol](https://github.com/artchain/artchain/blob/master/contract/artchain/archain.sol)
+
+    collection of drafts, functions to be implemented in the working prototypes.
+
 [artRegistry.sol](https://github.com/artchain/artchain/blob/master/contract/artchain/artRegistry.sol)
 
     Registers artwork on the ethereum blockchain, allowing users to appraise.
