@@ -25,14 +25,22 @@ We wrote this to demonstrate how an online marketplace can utilise the decentral
 ```
 We have build some prototype contracts
 ```
-
+[contract]
+  |-- .
+  |-- [artchain]
+  |-- .
+  |-- artRegistry.sol
+  
 [artRegistry.sol](https://github.com/artchain/artchain/blob/master/contract/artchain/artRegistry.sol)
 
     Registers artwork on the ethereum blockchain, allowing users to appraise.
     
 ## Whitepaper
 
-[whitepaper v1](https://github.com/artchain/artchain/blob/master/whitepaper/artchain%20%E2%80%92%20art%20unchain%E2%80%99d.pdf) written by Laurenzo Mefsut.
+
+[whitepaper v1](https://github.com/artchain/artchain/blob/master/whitepaper/artchain%20%E2%80%92%20art%20unchain%E2%80%99d.pdf) by Laurenzo Mefsut.
+
+## Website
 
 
 readme is under modification
