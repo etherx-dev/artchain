@@ -18,10 +18,19 @@ art assets secured on the blockchain
 ```
 the artchain marketplace demo is written in PHP using codeigniter.
 We wrote this to demonstrate how an online marketplace can utilise the decentralised data from artchain.
-[See it in action](http://artchainmarketdemo.artchain.org).
 ```
+[See it in action](http://artchainmarketdemo.artchain.org).
 
+## artchain smart contracts and library.
+```
+We have build some prototype contracts
+```
 
 [artRegistry.sol](https://github.com/artchain/artchain/blob/master/contract/artchain/artRegistry.sol)
 
   readme is under modification
+
+
+# info
+
+find us on 
