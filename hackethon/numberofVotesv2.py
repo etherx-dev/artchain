@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- 
 import time, urllib2, json, re, datetime
-
+from selenium import webdriver
 
 eventlist = []
 with open('./feed.hack.ether.camp.all.txt', 'r') as _:
@@ -16,8 +16,17 @@ for event in eventlist:
     i = i+1
     #print event, i
 i = 0
+#coindash count
+voteNumberOfCoindash = 0
+voteNumberOfCoindash100 = 0
+voteNumberOfCoindash110 = 0
+voteNumberOfCoindash210 = 0
+#artchain count
+voteNumberOfArtchain = 0
+voteNumberOfArtchain100 = 0
+voteNumberOfArtchain110 = 0
+voteNumberOfArtchain210 = 0
 numberofvotes = 0
-f =  open('./all-votes-with-facebook-profiles-and-vote-numbers.txt', 'w')
 for events in eventdata:
 	eventbatch = json.loads(events)
 	for event in eventbatch:
@@ -33,11 +42,24 @@ for events in eventdata:
 				timecreated = event['createdAt'] 
 				timecreated = time.strftime("%a %d %b %Y %H:%M:%S GMT", time.gmtime(timecreated / 1000.0))
 				print event['id'],timecreated,event['campSlug'],eventheader,"http://facebook.com/"+avatarUrl
-				f.write("%s\n" % (str(event['id'])+" "+timecreated+" "+event['campSlug']+" "+eventheader+" "+"http://facebook.com/"+avatarUrl))
 		if "voted to Coindash.io" in eventheader:
 			voteNumberOfCoindash = voteNumberOfCoindash+1
 		if "voted to artchain" in eventheader:
 			voteNumberOfArtchain = voteNumberOfArtchain+1
+		if "100 voted to Coindash.io" in eventheader:
+			voteNumberOfCoindash100 = voteNumberOfCoindash100+1
+		if "110 voted to Coindash.io" in eventheader:
+			voteNumberOfCoindash110 = voteNumberOfCoindash110+1
+		if "210 voted to Coindash.io" in eventheader:
+			voteNumberOfCoindash210 = voteNumberOfCoindash210+1
+		if "100 voted to artchain" in eventheader:
+			voteNumberOfArtchain100 = voteNumberOfArtchain100+1
+		if "110 voted to artchain" in eventheader:
+			voteNumberOfArtchain110 = voteNumberOfArtchain110+1
+		if "210 voted to artchain" in eventheader:
+			voteNumberOfArtchain210 = voteNumberOfArtchain210+1
+				
+			
 	numberofvotes=numberofvotes+1
 ## Sample. Interesting Data:
 # 13570 Wed 21 Dec 2016 17:35:23 GMT coindashio---stop-managing-your-investments-with-spreadsheets 100 voted to Coindash.io - Stop managing your investments with spreadsheets! http://facebook.com/1753280241660693
@@ -66,4 +88,26 @@ for events in eventdata:
 print numberofvotes #477
 print "Vote Number Of Coindash= "+str(voteNumberOfCoindash)
 print "Vote Number Of Artchain= "+str(voteNumberOfArtchain)
+print "Votes to Coindash ========================================"
+print "Vote Number Of Coindash 100= "+str(voteNumberOfCoindash100)
+print "Vote Number Of Coindash 110= "+str(voteNumberOfCoindash110)
+print "Vote Number Of Coindash 210= "+str(voteNumberOfCoindash210)
+print "Total= "+str(voteNumberOfCoindash210*210+voteNumberOfCoindash110*110+voteNumberOfCoindash100*100)
+print "Votes to Artchain ========================================"
+print "Vote Number Of Artchain 100= "+str(voteNumberOfArtchain100)
+print "Vote Number Of Artchain 110= "+str(voteNumberOfArtchain110)
+print "Vote Number Of Artchain 210= "+str(voteNumberOfArtchain210)
+print "Total= "+str(voteNumberOfArtchain210*210+voteNumberOfArtchain110*110+voteNumberOfArtchain100*100)
+#Vote Number Of Coindash= 283
+#Vote Number Of Artchain= 148
+#Votes to Coindash ========================================
+#Vote Number Of Coindash 100= 10
+#Vote Number Of Coindash 110= 171
+#Vote Number Of Coindash 210= 4
+#Total= 20650
+#Votes to Artchain ========================================
+#Vote Number Of Artchain 100= 3
+#Vote Number Of Artchain 110= 90
+#Vote Number Of Artchain 210= 21
+#Total= 14610
 		#{"header":"New camp Demo Camp was created","description":"The platform of <hack.ether.camp> is ongoing experiment \naiming to give any person on the planned financial potential \nto create a startup. We are connecting the worlds of the \nsocial networks and smart contracts, we study how filter and \npush real innovation to front lines to give backers a good \nchase to identify the best opportunities upfront.","code":"DEM","coverUrl":"/api/files/images/5","campName":"Demo Camp"}
