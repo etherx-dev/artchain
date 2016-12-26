@@ -12,6 +12,12 @@ we can find the correlation with events on the smart contract for kudos later on
 
 tool used to create this file: [fetchhackEvents.py](https://github.com/artchain/artchain/blob/master/hackethon/fetchhackEvents.py)
 
+
+[mapRegistered.py](https://github.com/artchain/artchain/blob/master/hackethon/mapRegistered.py)
+
+hackergold kudos contract address: 0x5e569e1ecd56fe30dd97ee233ec1675b60fb6680
+
+
 ### Last Block Mined before the End of Hackergold Event (Thu, 22 Dec 2016 14:00:00 GMT):
 
 https://etherscan.io/block/2855592 (Dec-22-2016 01:59:42 GMT)
@@ -31,5 +37,9 @@ reference:
 
 ### Contract of ProjectKudos, the contract of which all Registered Voters, Camps, Votes, info and the times of these executions.
 
-[0x5e569e1ecd56fe30dd97ee233ec1675b60fb6680](https://etherscan.io/address/0x5e569e1ecd56fe30dd97ee233ec1675b60fb6680) - [reference](https://etherscan.io/address/0x5e569e1ecd56fe30dd97ee233ec1675b60fb6680#code)
+[0x5e569e1ecd56fe30dd97ee233ec1675b60fb6680](https://etherscan.io/address/0x5e569e1ecd56fe30dd97ee233ec1675b60fb6680)
+
+![reference](https://raw.githubusercontent.com/artchain/artchain/master/hackethon/images/txinfo.PNG)
+
+[reference](https://etherscan.io/address/0x5e569e1ecd56fe30dd97ee233ec1675b60fb6680#code)
 
