@@ -10,7 +10,7 @@ def gettxlist(address):
     return data
 
 addresslist = []
-with open('c:\Users\em\Desktop\hack.ether.camp.memberaccounts.distinct.txt', 'r') as _:
+with open('./hack.ether.camp.memberaccounts.distinct.txt', 'r') as _:
     for line in _:
         line = line.strip()
         if line:
@@ -23,7 +23,7 @@ for address in addresslist:
     i = i+1
     print txlist, i
 
-f = open("c:\Users\em\Desktop\hack.ether.camp.memberaccounts.txlist.txt", 'w')
+f = open("./hack.ether.camp.memberaccounts.txlist.txt", 'w')
 for txlist in accounttxdata:
     f.write("%s\n" % txlist)
 f.close()
