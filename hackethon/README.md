@@ -2,6 +2,16 @@ independent analysis of the ethercamp hackethon. results and code used for analy
 
 # Important Notes:
 
+### Files in this folder:
+
+[feed.hack.ether.camp.all.txt](https://github.com/artchain/artchain/blob/master/hackethon/feed.hack.ether.camp.all.txt)
+
+''' A text file, with each line containing a json result of 5 events from the event feed of hack.ether.camp. the last feed is [page 344](https://hack.ether.camp/api/feed?group=ALL&page=344)
+
+we can find the correlation with events on the smart contract for kudos later on, then find out which votes belong to which facebook id, voting partern and more.'''
+
+tool used to create this file: [fetchhackEevents.py](https://github.com/artchain/artchain/blob/master/hackethon/fetchhackEevents.py)
+
 ### Last Block Mined before the End of Hackergold Event (Thu, 22 Dec 2016 14:00:00 GMT):
 
 https://etherscan.io/block/2855592 (Dec-22-2016 01:59:42 GMT)
@@ -18,7 +28,6 @@ reference:
 ### Creator and Owner of ProjectKudos
 
 [0x7baf96ee63017cc63d7da8df51fb04d4c3a7ef7b](https://etherscan.io/address/0x7baf96ee63017cc63d7da8df51fb04d4c3a7ef7b) - [reference](https://etherscan.io/tx/0x3a732ee2f56b0ee7a8f6f74d5f99ec5b3d0632f31603460cd1eda0f957b2512e)
-https://etherscan.io/tx/0x3a732ee2f56b0ee7a8f6f74d5f99ec5b3d0632f31603460cd1eda0f957b2512e
 
 ### Contract of ProjectKudos, the contract of which all Registered Voters, Camps, Votes, info and the times of these executions.
 
