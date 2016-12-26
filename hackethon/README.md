@@ -14,6 +14,40 @@ independent analysis of the ethercamp hackethon. results and code used for analy
 # Important Notes:
 
 ### Files in this folder:
+
+some of the "legitimate facebook accounts" signed up to the hackathon the same second, i.e;
+
+https://etherscan.io/address/0x1130f6cc5a138458a37a6a6096abf9194889a846
+
+https://etherscan.io/address/0x38f47846e5527370c1c84fc9ace6b2d2f5af6993
+
+and then voted the same second:
+
+https://etherscan.io/tx/0x18dd01d7914cb1ecae4dee0da22e613be5a7b83094fe977e8a9d81d9e5b66c80
+
+https://etherscan.io/tx/0x18dd01d7914cb1ecae4dee0da22e613be5a7b83094fe977e8a9d81d9e5b66c80
+
+if you look at
+
+https://github.com/artchain/artchain/blob/master/hackethon/vote.times.and.facebook.profiles.draft.txt
+
+13869 Thu 22 Dec 2016 13:49:58 GMT coindashio---stop-managing-your-investments-with-spreadsheets 110 voted to Coindash.io - Stop managing your investments with spreadsheets! http://facebook.com/1405219489496997
+
+13868 Thu 22 Dec 2016 13:49:58 GMT coindashio---stop-managing-your-investments-with-spreadsheets 110 voted to Coindash.io - Stop managing your investments with spreadsheets! http://facebook.com/10157966816675188
+
+13867 Thu 22 Dec 2016 13:49:58 GMT coindashio---stop-managing-your-investments-with-spreadsheets 110 voted to Coindash.io - Stop managing your investments with spreadsheets! http://facebook.com/10154869220033934
+
+13866 Thu 22 Dec 2016 13:49:58 GMT coindashio---stop-managing-your-investments-with-spreadsheets 110 voted to Coindash.io - Stop managing your investments with spreadsheets! http://facebook.com/1367092766655220
+
+13865 Thu 22 Dec 2016 13:49:58 GMT coindashio---stop-managing-your-investments-with-spreadsheets 110 voted to Coindash.io - Stop managing your investments with spreadsheets! http://facebook.com/10154928637089090
+
+13864 Thu 22 Dec 2016 13:49:58 GMT coindashio---stop-managing-your-investments-with-spreadsheets 110 voted to Coindash.io - Stop managing your investments with spreadsheets! http://facebook.com/10154866536174777
+
+at least two of these voters, whom voted for coindash with legitimate facebook accounts, signed up the same second, waited 3 hours and voted the same second.
+
+Please comment.
+
+https://github.com/artchain/artchain/blob/master/hackethon/vote.times.and.facebook.profiles.draft.txt
 ![coindash.png](https://github.com/artchain/artchain/blob/master/hackethon/images/coindash.png)
 [feed.hack.ether.camp.all.txt](https://github.com/artchain/artchain/blob/master/hackethon/feed.hack.ether.camp.all.txt)
 
