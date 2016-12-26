@@ -14,7 +14,7 @@ independent analysis of the ethercamp hackethon. results and code used for analy
 # Important Notes:
 
 ### Files in this folder:
-
+![coindash.png](https://github.com/artchain/artchain/blob/master/hackethon/images/coindash.png)
 [feed.hack.ether.camp.all.txt](https://github.com/artchain/artchain/blob/master/hackethon/feed.hack.ether.camp.all.txt)
 
  A text file, with each line containing a json result of 5 events from the event feed of hack.ether.camp. the last feed is [page 344](https://hack.ether.camp/api/feed?group=ALL&page=344)
