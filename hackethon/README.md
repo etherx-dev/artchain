@@ -10,7 +10,7 @@ independent analysis of the ethercamp hackethon. results and code used for analy
 
 we can find the correlation with events on the smart contract for kudos later on, then find out which votes belong to which facebook id, voting partern and more.
 
-tool used to create this file: [fetchhackEevents.py](https://github.com/artchain/artchain/blob/master/hackethon/fetchhackEevents.py)
+tool used to create this file: [fetchhackEvents.py](https://github.com/artchain/artchain/blob/master/hackethon/fetchhackEvents.py)
 
 ### Last Block Mined before the End of Hackergold Event (Thu, 22 Dec 2016 14:00:00 GMT):
 
