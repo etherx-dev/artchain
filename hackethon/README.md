@@ -4,6 +4,7 @@ independent analysis of the ethercamp hackethon. results and code used for analy
 
 - [x] Upload code of every script used to harvest and process data.
 - [x] Create list of all user ethereum address, registered to hack.ether.camp. [done](https://github.com/artchain/artchain/blob/master/hackethon/feed.hack.ether.camp.all.txt) with reference in the readme.
+- [x] Create a list of all facebook account profiles which have voted.
 - [ ] Create list of all account voting times [in progress, shows time voted and facebook data here](https://github.com/artchain/artchain/blob/master/hackethon/numberofVotes.py)
 - [ ] Create list of all times user votes were granted by the project owner account (Hack.ether.camp backend) to users whom voted/registered.
 - [ ] Diplay data of voting patern times, in corrolation to their signup. and their sister accounts.
