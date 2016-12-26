@@ -31,7 +31,7 @@ for events in eventdata:
 				avatarUrl = str.replace(avatarUrl, "/picture?height=300", "")
 				timecreated = event['createdAt'] 
 				timecreated = time.strftime("%a %d %b %Y %H:%M:%S GMT", time.gmtime(timecreated / 1000.0))
-				print event['id'],timecreatedevent['campSlug'],eventheader,"http://facebook.com/"+avatarUrl
+				print event['id'],timecreated,event['campSlug'],eventheader,"http://facebook.com/"+avatarUrl
 	numberofvotes=numberofvotes+1
 ## Sample. Interesting Data:
 # 13570 Wed 21 Dec 2016 17:35:23 GMT coindashio---stop-managing-your-investments-with-spreadsheets 100 voted to Coindash.io - Stop managing your investments with spreadsheets! http://facebook.com/1753280241660693
