@@ -33,13 +33,15 @@ reference:
 
 ### Creator and Owner of ProjectKudos
 
-[0x7baf96ee63017cc63d7da8df51fb04d4c3a7ef7b](https://etherscan.io/address/0x7baf96ee63017cc63d7da8df51fb04d4c3a7ef7b) - [reference](https://etherscan.io/tx/0x3a732ee2f56b0ee7a8f6f74d5f99ec5b3d0632f31603460cd1eda0f957b2512e)
+[0x7baf96ee63017cc63d7da8df51fb04d4c3a7ef7b](https://etherscan.io/address/0x7baf96ee63017cc63d7da8df51fb04d4c3a7ef7b)
+
+![reference](https://raw.githubusercontent.com/artchain/artchain/master/hackethon/images/txinfo.PNG)
+
+[reference](https://etherscan.io/tx/0x3a732ee2f56b0ee7a8f6f74d5f99ec5b3d0632f31603460cd1eda0f957b2512e)
 
 ### Contract of ProjectKudos, the contract of which all Registered Voters, Camps, Votes, info and the times of these executions.
 
 [0x5e569e1ecd56fe30dd97ee233ec1675b60fb6680](https://etherscan.io/address/0x5e569e1ecd56fe30dd97ee233ec1675b60fb6680)
-
-![reference](https://raw.githubusercontent.com/artchain/artchain/master/hackethon/images/txinfo.PNG)
 
 [reference](https://etherscan.io/address/0x5e569e1ecd56fe30dd97ee233ec1675b60fb6680#code)
 
