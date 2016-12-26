@@ -34,6 +34,10 @@ for events in eventdata:
 				timecreated = time.strftime("%a %d %b %Y %H:%M:%S GMT", time.gmtime(timecreated / 1000.0))
 				print event['id'],timecreated,event['campSlug'],eventheader,"http://facebook.com/"+avatarUrl
 				f.write("%s\n" % (str(event['id'])+" "+timecreated+" "+event['campSlug']+" "+eventheader+" "+"http://facebook.com/"+avatarUrl))
+		if "voted to Coindash.io" in eventheader:
+			voteNumberOfCoindash = voteNumberOfCoindash+1
+		if "voted to artchain" in eventheader:
+			voteNumberOfArtchain = voteNumberOfArtchain+1
 	numberofvotes=numberofvotes+1
 ## Sample. Interesting Data:
 # 13570 Wed 21 Dec 2016 17:35:23 GMT coindashio---stop-managing-your-investments-with-spreadsheets 100 voted to Coindash.io - Stop managing your investments with spreadsheets! http://facebook.com/1753280241660693
@@ -60,4 +64,6 @@ for events in eventdata:
 # 13540 Wed 21 Dec 2016 16:43:04 GMT coindashio---stop-managing-your-investments-with-spreadsheets 220 voted to Coindash.io - Stop managing your investments with spreadsheets! http://facebook.com/1271737662883168
 # 13537 Wed 21 Dec 2016 16:41:54 GMT coindashio---stop-managing-your-investments-with-spreadsheets 110 voted to Coindash.io - Stop managing your investments with spreadsheets! http://facebook.com/349600945421427
 print numberofvotes #477
+print "Vote Number Of Coindash= "+str(voteNumberOfCoindash)
+print "Vote Number Of Artchain= "+str(voteNumberOfArtchain)
 		#{"header":"New camp Demo Camp was created","description":"The platform of <hack.ether.camp> is ongoing experiment \naiming to give any person on the planned financial potential \nto create a startup. We are connecting the worlds of the \nsocial networks and smart contracts, we study how filter and \npush real innovation to front lines to give backers a good \nchase to identify the best opportunities upfront.","code":"DEM","coverUrl":"/api/files/images/5","campName":"Demo Camp"}
