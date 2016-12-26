@@ -1,9 +1,10 @@
 import time, urllib2, json, re
 
 ## check txlist to count any accounts related to coindash, returned 287
-## https://etherscan.io/address/0x5e569e1ecd56fe30dd97ee233ec1675b60fb6680
+# https://etherscan.io/address/0x5e569e1ecd56fe30dd97ee233ec1675b60fb6680 
 ## this is the contract address for project kudos, belongs to hack.ether.camp. Every member creates a call to this contract, the moment of signup, the moment they link their social media profile (if they signed up with their social media profile, will be the moment of their signup so we can differentiate them too), the moments they cast votes
-
+# https://etherscan.io/address/0x7baf96ee63017cc63d7da8df51fb04d4c3a7ef7b
+## this is the contract address, owner of project kudos. can call private functions of the contract.
 
 coindashcampid = "4352210000000000000000000000000000000000000000000000000000000000"
 
