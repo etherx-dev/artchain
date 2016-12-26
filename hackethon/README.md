@@ -21,6 +21,7 @@ hackergold kudos contract address: 0x5e569e1ecd56fe30dd97ee233ec1675b60fb6680
 ### Last Block Mined before the End of Hackergold Event (Thu, 22 Dec 2016 14:00:00 GMT):
 
 ![reference](https://raw.githubusercontent.com/artchain/artchain/master/hackethon/images/lastminedbeforeeventend.PNG)
+
 https://etherscan.io/block/2855592 (Dec-22-2016 01:59:42 GMT)
 
 reference:
