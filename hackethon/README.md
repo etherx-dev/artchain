@@ -6,9 +6,9 @@ independent analysis of the ethercamp hackethon. results and code used for analy
 
 [feed.hack.ether.camp.all.txt](https://github.com/artchain/artchain/blob/master/hackethon/feed.hack.ether.camp.all.txt)
 
-''' A text file, with each line containing a json result of 5 events from the event feed of hack.ether.camp. the last feed is [page 344](https://hack.ether.camp/api/feed?group=ALL&page=344)
+ A text file, with each line containing a json result of 5 events from the event feed of hack.ether.camp. the last feed is [page 344](https://hack.ether.camp/api/feed?group=ALL&page=344)
 
-we can find the correlation with events on the smart contract for kudos later on, then find out which votes belong to which facebook id, voting partern and more.'''
+we can find the correlation with events on the smart contract for kudos later on, then find out which votes belong to which facebook id, voting partern and more.
 
 tool used to create this file: [fetchhackEevents.py](https://github.com/artchain/artchain/blob/master/hackethon/fetchhackEevents.py)
 
